@@ -46,10 +46,10 @@ function setHeader(elementId, pageTitle){
 }
 
 
-setHeader('headerH', 'LANDING PAGE');
-setHeader('headerB', 'BOOK PAGE');
-setHeader('headerC', 'CONTACT PAGE');
-setHeader('headerA', 'ABOUT PAGE');
+setHeader('headerH', 'Robert Hacker');
+setHeader('headerB', 'Robert Hacker');
+setHeader('headerC', 'Robert Hacker');
+setHeader('headerA', 'Robert Hackers');
 
 // Find the visible header
 const header =
@@ -63,10 +63,10 @@ window.addEventListener('scroll', () => {
     if (!header || hambEnabled) return;
     if (window.scrollY > lastScrollY) {
         header.style.transform = 'translateY(-100%)';
-        header.style.transition = 'transform 0.3s ease';
+        header.style.transition = 'transform 0.5s ease';
     } else if (window.scrollY < lastScrollY) {
         header.style.transform = 'translateY(0)';
-        header.style.transition = 'transform 0.3s ease';
+        header.style.transition = 'transform 0.5s ease';
     }
     lastScrollY = window.scrollY;
 });

@@ -5,3 +5,54 @@
 @theme{
     --font-kanit: "Kanit", sans-serif;
 }
+
+/* Card Flip Styles */
+.card-flip.flipped .card-front {
+    transform: rotateY(180deg);
+}
+.card-flip.flipped .card-back {
+    transform: rotateY(0deg);
+}
+
+.perspective {
+    perspective: 1200px;
+}
+.card-flip {
+    position: relative;
+}
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    backface-visibility: hidden;
+    transition: transform 0.5s;
+}
+.card-front {
+    background: transparent;
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+.card-back {
+    background: rgba(255,255,255,0.95);
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+.card-flip.group:hover .card-front,
+.card-flip.group:focus .card-front {
+    transform: rotateY(180deg);
+}
+.card-flip.group:hover .card-back,
+.card-flip.group:focus .card-back {
+    transform: rotateY(0deg);
+}
+
+.card-flip.flipped + .whoIsThis,
+.card-flip.group:hover + .whoIsThis {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.whoIsThis {
+    transition: opacity 0.5s;
+}
