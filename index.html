@@ -4,19 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="bg-amber-50">
-    <header id="headerH" class="sticky top-0 w-full pl-10 pr-10 pb-5 pt-5 bg-white/30 backdrop-blur-lg shadow-lg "></header>
+<body class="bg-amber-50 overflow-x-hidden sm:overflow-x-visible">
+    <header id="headerH" class="sticky top-0 w-full pl-10 pr-10 pb-5 pt-5 bg-white/30 backdrop-blur-lg shadow-lg z-30"></header>
+
+    <main class="flex justify-center items-center min-h-[80vh] p-50 bg-amber-900 flex-col"> 
+        <div class="relative w-[600px] h-[600px]">
+            <!-- Central Picture -->
+            <img src="./images/RobertHacker.jpg" alt="Robert Hacker"
+                 class="absolute left-1/2 top-1/2 w-[320px] h-[320px] rounded-full object-cover -translate-x-1/2 -translate-y-1/2 z-10 shadow-lg hover:shadow-2xl transition-transform duration-400 ease-in-out">
+
+            <!-- Orbiting Books -->
+            <div class="books-orbit absolute left-1/2 top-1/2 w-[620px] h-[620px] z-20">
+                <img src="./images/The Second Renaissance.jpg" alt="Book 1"
+                     class="orbit w-[210px] h-[250px] rounded-lg object-cover shadow-lg hover:shadow-2xl transition-transform duration-400 ease-in-out"
+                     onclick="window.open('//www.amazon.com/Second-Renaissance-Transform-Technology-Entrepreneurship/dp/3111706877/?_encoding=UTF8&pd_rd_w=jpt49&content-id=amzn1.sym.0fb2cce1-1ca4-439a-844b-8ad0b1fb77f7&pf_rd_p=0fb2cce1-1ca4-439a-844b-8ad0b1fb77f7&pf_rd_r=139-9393539-1462532&pd_rd_wg=JXTII&pd_rd_r=083eb0b2-bce7-475d-b2ba-b281672947b4&ref_=aufs_ap_sc_dsk', '_blank')">
+                <img src="./images/Billion Dollar Company.jpg" alt="Book 2"
+                     class="orbit w-[210px] h-[250px] rounded-lg object-cover shadow-lg hover:shadow-2xl transition-transform duration-400 ease-in-out" onclick="window.open('//www.amazon.com/Billion-Dollar-Company-Entrepreneurs-Companies/dp/3838373316/?_encoding=UTF8&pd_rd_w=xc2Ti&content-id=amzn1.sym.0fb2cce1-1ca4-439a-844b-8ad0b1fb77f7&pf_rd_p=0fb2cce1-1ca4-439a-844b-8ad0b1fb77f7&pf_rd_r=147-7765209-5491829&pd_rd_wg=Q2qQD&pd_rd_r=67743995-6130-4347-a55a-0247b3d13e71&ref_=aufs_ap_sc_dsk', '_blank')">
+                <img src="./images/Scaling Social Entrepreneurship.jpg" alt="Book 3"
+                     class="orbit w-[210px] h-[250px] rounded-lg object-cover shadow-lg hover:shadow-2xl transition-transform duration-400 ease-in-out" onclick="window.open('//www.amazon.com/Scaling-Social-Entrepreneurship-Lessons-Learned/dp/1514707381/?_encoding=UTF8&pd_rd_w=xc2Ti&content-id=amzn1.sym.0fb2cce1-1ca4-439a-844b-8ad0b1fb77f7&pf_rd_p=0fb2cce1-1ca4-439a-844b-8ad0b1fb77f7&pf_rd_r=147-7765209-5491829&pd_rd_wg=Q2qQD&pd_rd_r=67743995-6130-4347-a55a-0247b3d13e71&ref_=aufs_ap_sc_dsk', '_blank')">
+                <img src="./images/The Renaissance Rewired.jpg" alt="Book 4"
+                     class="orbit w-[210px] h-[250px] rounded-lg object-cover shadow-lg hover:shadow-2xl transition-transform duration-400 ease-in-out" onclick="window.open('//www.amazon.com/Renaissance-Rewired-Governing-Age-Complexity/dp/B0FFYHJ3LR/?_encoding=UTF8&pd_rd_w=xc2Ti&content-id=amzn1.sym.0fb2cce1-1ca4-439a-844b-8ad0b1fb77f7&pf_rd_p=0fb2cce1-1ca4-439a-844b-8ad0b1fb77f7&pf_rd_r=147-7765209-5491829&pd_rd_wg=Q2qQD&pd_rd_r=67743995-6130-4347-a55a-0247b3d13e71&ref_=aufs_ap_sc_dsk', '_blank')">
+            </div>
+
+        </div>
+
+        <div class="flex justify-center mt-5">
+            <span class="animate-bounce text-4xl text-amber-500">&#8595;</span>
+        </div>
+
+        <!-- New separated section starts here -->
+        <section class="w-full flex flex-col items-center py-16 px-4 bg-white/80 rounded-3xl shadow-lg mt-50">
+            <div class="flex justify-center mt-4 z-35">
+                <a href="https://www.amazon.com/Renaissance-Rewired-Governing-Age-Complexity/dp/B0FFYHJ3LR/?_encoding=UTF8&pd_rd_w=xc2Ti&content-id=amzn1.sym.0fb2cce1-1ca4-439a-844b-8ad0b1fb77f7&pf_rd_p=0fb2cce1-1ca4-439a-844b-8ad0b1fb77f7&pf_rd_r=147-7765209-5491829&pd_rd_wg=Q2qQD&pd_rd_r=67743995-6130-4347-a55a-0247b3d13e71&ref_=aufs_ap_sc_dsk" target="_blank"
+                   class="bg-amber-500 hover:bg-amber-600 text-white font-kanit font-bold py-4 px-8 rounded-xl shadow-lg text-xl transition-colors duration-200">
+                    Get Robert Hacker's Latest Book 
+                </a>
+            </div>
+
+            <div class="mt-12 text-center max-w-xl mx-auto">
+                <blockquote class="italic text-lg text-gray-700 font-kanit">
+                    "Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.   "
+                </blockquote>
+                <span class="block mt-2 text-amber-700 font-kanit font-bold">— Robert Hacker</span>
+            </div>
+
+            <div class="flex justify-center gap-6 mt-8">
+                <a href="https://roberthhacker.medium.com/" alt="Robert Hacker on Medium" target="_blank" class="text-amber-600 hover:text-amber-800 text-3xl">
+                    <i class="fab fa-medium"></i>
+                </a>
+                <a href="https://linkedin.com/in/roberthacker" alt="Robert Hacker on LinkedIn" target="_blank" class="text-amber-600 hover:text-amber-800 text-3xl">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://youtu.be/6Juh_bz9kxY?si=41QSHokLwMjY_mB9" alt="Robert Hacker on YouTube" target="_blank" class="text-amber-600 hover:text-amber-800 text-3xl">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+            
+        </section>
+    </main>
 
 
-
-
-
-    <footer id="footer" class="bottom-0 w-full pt-15 bg-white/30 backdrop-blur-lg "></footer>
-    
+    <!-- <footer id="footer" class="bottom-0 w-full pt-15 bg-white/30 backdrop-blur-lg "></footer> -->
     <script src="./js/header.js"></script>
     <script src="./js/footer.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
+
+<!-- npx @tailwindcss/cli -i ./css/styles.css -o ./output.css --watch -->
