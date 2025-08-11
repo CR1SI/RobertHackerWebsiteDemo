@@ -1,69 +1,104 @@
 <!DOCTYPE html>
 <head>
-    <title>The personal website of Robert Hacker. Author of The Second Renaissance: How AI Will Transform Science, Technology and Entrepreneurship</title>
+    <title>Home - Robert Hacker</title>
+    <meta name="description" content="The personal website of Robert Hacker. Author of The Second Renaissance: How AI Will Transform Science, Technology and Entrepreneurship">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="bg-amber-50 overflow-x-hidden sm:overflow-x-visible">
-    <header id="headerH" class="sticky top-0 w-full pl-10 pr-10 pb-5 pt-5 bg-white/30 backdrop-blur-lg shadow-lg z-30"></header>
+<body class="bg-blue-50/50 overflow-x-hidden sm:overflow-x-visible">
+    <header id="headerH" class="sticky top-0 w-full pl-10 pr-10 pb-5 pt-5 bg-white/30 backdrop-blur-lg shadow-lg z-300"></header>
 
-    <main class="flex justify-center items-center min-h-[80vh] p-50 bg-amber-900 flex-col"> 
-        <div class="relative w-[600px] h-[600px]">
-            <!-- Central Picture -->
-            <img src="./images/RobertHacker.jpg" alt="Robert Hacker"
-                 class="absolute left-1/2 top-1/2 w-[320px] h-[320px] rounded-full object-cover -translate-x-1/2 -translate-y-1/2 z-10 shadow-lg hover:shadow-2xl transition-transform duration-400 ease-in-out">
+    <main class="min-h-screen p-4 flex flex-col gap-16">
 
-            <!-- Orbiting Books -->
-            <div class="books-orbit absolute left-1/2 top-1/2 w-[620px] h-[620px] z-20">
-                <img src="./images/The Second Renaissance.jpg" alt="Book 1"
-                     class="orbit w-[210px] h-[250px] rounded-lg object-cover shadow-lg hover:shadow-2xl transition-transform duration-400 ease-in-out"
-                     onclick="window.open('//www.amazon.com/Second-Renaissance-Transform-Technology-Entrepreneurship/dp/3111706877/?_encoding=UTF8&pd_rd_w=jpt49&content-id=amzn1.sym.0fb2cce1-1ca4-439a-844b-8ad0b1fb77f7&pf_rd_p=0fb2cce1-1ca4-439a-844b-8ad0b1fb77f7&pf_rd_r=139-9393539-1462532&pd_rd_wg=JXTII&pd_rd_r=083eb0b2-bce7-475d-b2ba-b281672947b4&ref_=aufs_ap_sc_dsk', '_blank')">
-                <img src="./images/Billion Dollar Company.jpg" alt="Book 2"
-                     class="orbit w-[210px] h-[250px] rounded-lg object-cover shadow-lg hover:shadow-2xl transition-transform duration-400 ease-in-out" onclick="window.open('//www.amazon.com/Billion-Dollar-Company-Entrepreneurs-Companies/dp/3838373316/?_encoding=UTF8&pd_rd_w=xc2Ti&content-id=amzn1.sym.0fb2cce1-1ca4-439a-844b-8ad0b1fb77f7&pf_rd_p=0fb2cce1-1ca4-439a-844b-8ad0b1fb77f7&pf_rd_r=147-7765209-5491829&pd_rd_wg=Q2qQD&pd_rd_r=67743995-6130-4347-a55a-0247b3d13e71&ref_=aufs_ap_sc_dsk', '_blank')">
-                <img src="./images/Scaling Social Entrepreneurship.jpg" alt="Book 3"
-                     class="orbit w-[210px] h-[250px] rounded-lg object-cover shadow-lg hover:shadow-2xl transition-transform duration-400 ease-in-out" onclick="window.open('//www.amazon.com/Scaling-Social-Entrepreneurship-Lessons-Learned/dp/1514707381/?_encoding=UTF8&pd_rd_w=xc2Ti&content-id=amzn1.sym.0fb2cce1-1ca4-439a-844b-8ad0b1fb77f7&pf_rd_p=0fb2cce1-1ca4-439a-844b-8ad0b1fb77f7&pf_rd_r=147-7765209-5491829&pd_rd_wg=Q2qQD&pd_rd_r=67743995-6130-4347-a55a-0247b3d13e71&ref_=aufs_ap_sc_dsk', '_blank')">
-                <img src="./images/The Renaissance Rewired.jpg" alt="Book 4"
-                     class="orbit w-[210px] h-[250px] rounded-lg object-cover shadow-lg hover:shadow-2xl transition-transform duration-400 ease-in-out" onclick="window.open('//www.amazon.com/Renaissance-Rewired-Governing-Age-Complexity/dp/B0FFYHJ3LR/?_encoding=UTF8&pd_rd_w=xc2Ti&content-id=amzn1.sym.0fb2cce1-1ca4-439a-844b-8ad0b1fb77f7&pf_rd_p=0fb2cce1-1ca4-439a-844b-8ad0b1fb77f7&pf_rd_r=147-7765209-5491829&pd_rd_wg=Q2qQD&pd_rd_r=67743995-6130-4347-a55a-0247b3d13e71&ref_=aufs_ap_sc_dsk', '_blank')">
+        <section class="w-full flex flex-col items-center py-16 px-4 mt-25 relative">
+            <div class="w-full max-w-[600px] aspect-square">
+                <!-- Central Picture -->
+                <img src="./images/RobertHacker.jpg" alt="Robert Hacker"
+                    class="absolute left-1/2 top-1/2 w-[250px] h-[250px] sm:w-[320px] sm:h-[320px] rounded-full object-cover -translate-x-1/2 -translate-y-1/2 z-30 shadow-xl hover:shadow-lg transition-transform hover:scale-95 duration-400 ease-in-out cursor-pointer"
+                    onclick="window.location.href='about.html'">
+
+                <!-- Orbiting Books -->
+                <div class="books-orbit absolute left-1/2 top-1/2 w-[620px] h-[620px] z-20">
+                    <img src="./images/The Second Renaissance.jpg" alt="Book cover of The Second Renaissance by Robert Hacker"
+                        class="orbit w-[180px] h-[250px] rounded-lg object-contain bg-white shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-200 ease-in-out cursor-pointer"
+                        onclick="window.open('//www.amarzon.com/Second-Renaissance-Transform-Technology-Entrepreneurship/dp/3111706877/?_encoding=UTF8&pd_rd_w=jpt49&content-id=amzn1.sym.0fb2cce1-1ca4-439a-844b-8ad0b1fb77f7&pf_rd_p=0fb2cce1-1ca4-439a-844b-8ad0b1fb77f7&pf_rd_r=139-9393539-1462532&pd_rd_wg=JXTII&pd_rd_r=083eb0b2-bce7-475d-b2ba-b281672947b4&ref_=aufs_ap_sc_dsk', '_blank')">
+                    <img src="./images/Billion Dollar Company.jpg" alt="Book cover of Billion Dollar Company by Rober Hacker"
+                        class="orbit w-[167px] h-[250px] rounded-lg object-contain bg-white shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-200 ease-in-out cursor-pointer" onclick="window.open('//www.amazon.com/Billion-Dollar-Company-Entrepreneurs-Companies/dp/3838373316/?_encoding=UTF8&pd_rd_w=xc2Ti&content-id=amzn1.sym.0fb2cce1-1ca4-439a-844b-8ad0b1fb77f7&pf_rd_p=0fb2cce1-1ca4-439a-844b-8ad0b1fb77f7&pf_rd_r=147-7765209-5491829&pd_rd_wg=Q2qQD&pd_rd_r=67743995-6130-4347-a55a-0247b3d13e71&ref_=aufs_ap_sc_dsk', '_blank')">
+                    <img src="./images/Scaling Social Entrepreneurship.jpg" alt="Book cover of Scaling Social Entrepreneurship by Robert Hacker"
+                        class="orbit w-[167px] h-[250px] rounded-lg object-contain bg-white shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-200 ease-in-out cursor-pointer" onclick="window.open('//www.amazon.com/Scaling-Social-Entrepreneurship-Lessons-Learned/dp/1514707381/?_encoding=UTF8&pd_rd_w=xc2Ti&content-id=amzn1.sym.0fb2cce1-1ca4-439a-844b-8ad0b1fb77f7&pf_rd_p=0fb2cce1-1ca4-439a-844b-8ad0b1fb77f7&pf_rd_r=147-7765209-5491829&pd_rd_wg=Q2qQD&pd_rd_r=67743995-6130-4347-a55a-0247b3d13e71&ref_=aufs_ap_sc_dsk', '_blank')">
+                    <div class="orbit w-[167px] h-[250px] rounded-lg bg-white relative">
+                        <span class="absolute z-30 top-2 right-2 bg-amber-500 text-white text-xs font-bold px-2 py-1 rounded">Latest</span>
+                        <img src="./images/The Renaissance Rewired.jpg" alt="Book cover of The Renaissance Rewired by Robert Hacker"
+                            class="w-full h-full object-contain rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300 ease-out cursor-pointer hover:outline-2 hover:outline-amber-500" onclick="window.open('//www.amazon.com/Renaissance-Rewired-Governing-Age-Complexity/dp/B0FFYHJ3LR/?_encoding=UTF8&pd_rd_w=xc2Ti&content-id=amzn1.sym.0fb2cce1-1ca4-439a-844b-8ad0b1fb77f7&pf_rd_p=0fb2cce1-1ca4-439a-844b-8ad0b1fb77f7&pf_rd_r=147-7765209-5491829&pd_rd_wg=Q2qQD&pd_rd_r=67743995-6130-4347-a55a-0247b3d13e71&ref_=aufs_ap_sc_dsk', '_blank')">
+                    </div>
+                </div>
             </div>
+        </section>
 
+        <div class="flex justify-center mt-0">
+            <span class="animate-bounce text-4xl sm:text-5xl text-amber-500 z-200">&#8595;</span>
         </div>
 
-        <div class="flex justify-center mt-5">
-            <span class="animate-bounce text-4xl text-amber-500">&#8595;</span>
-        </div>
+        <section class="w-full py-16 px-4 bg-white rounded-3xl shadow-lg mt-10 ">
+            <div class="grid grid-cols-1 md:grid-cols-2 items-center">
+
+                <!-- Left: Text + Call to Action -->
+                <div class="flex flex-col gap-6">
+                    <a href="https://www.amazon.com/Renaissance-Rewired-Governing-Age-Complexity/dp/B0FFYHJ3LR/" 
+                        target="_blank"
+                        class="bg-amber-500 hover:bg-amber-600 text-white self-start font-kanit font-bold py-4 px-8 rounded-xl shadow-lg text-xl transition-colors duration-200 w-fit">
+                        Get Robert Hacker's Latest Book
+                    </a>
+                    <p class="text-xl text-gray-700 font-kanit font-normal leading-relaxed">
+                        <strong class="text-xl">The Renaissance Rewired:</strong> In a world where artificial intelligence, biotechnology, and rapid technological change are rewriting the rules, <em>The Renaissance Rewired: Governing in the Age of AI and Complexity</em> offers a bold new vision for how we organize society and plan for the future. Robert Hacker shows why old models aren’t enough and introduces powerful ideas like complex adaptive systems and emergent strategy to help us adapt, innovate, and thrive.
+                    </p>
+
+                    <!-- Optional extra call to action -->
+                    <a href="https://www.amazon.com/Renaissance-Rewired-Governing-Age-Complexity/dp/B0FFYHJ3LR/"
+                        target="_blank" 
+                        class="underline text-amber-500 hover:text-amber-600 text-base font-semibold">
+                        Learn More on Amazon →
+                    </a>
+                </div>
+
+               <!-- Right: Image -->
+                <div class="flex justify-center p-5">
+                    <img src="./images/The Renaissance Rewired.jpg" alt="The Renaissance Rewired Book"
+                        class="w-[210px] h-[320px] bg-blue-50/50 object-contain rounded-lg shadow-2xl hover:shadow-xl hover:scale-103 transition-all duration-300 ease-in-out cursor-pointer"
+                        onclick="window.open('//www.amazon.com/Renaissance-Rewired-Governing-Age-Complexity/dp/B0FFYHJ3LR/', '_blank')">
+                </div>
+
+            </div>
+        </section>
 
         <!-- New separated section starts here -->
-        <section class="w-full flex flex-col items-center py-16 px-4 bg-white/80 rounded-3xl shadow-lg mt-50">
-            <div class="flex justify-center mt-4 z-35">
-                <a href="https://www.amazon.com/Renaissance-Rewired-Governing-Age-Complexity/dp/B0FFYHJ3LR/?_encoding=UTF8&pd_rd_w=xc2Ti&content-id=amzn1.sym.0fb2cce1-1ca4-439a-844b-8ad0b1fb77f7&pf_rd_p=0fb2cce1-1ca4-439a-844b-8ad0b1fb77f7&pf_rd_r=147-7765209-5491829&pd_rd_wg=Q2qQD&pd_rd_r=67743995-6130-4347-a55a-0247b3d13e71&ref_=aufs_ap_sc_dsk" target="_blank"
-                   class="bg-amber-500 hover:bg-amber-600 text-white font-kanit font-bold py-4 px-8 rounded-xl shadow-lg text-xl transition-colors duration-200">
-                    Get Robert Hacker's Latest Book 
-                </a>
-            </div>
-
-            <div class="mt-12 text-center max-w-xl mx-auto">
-                <blockquote class="italic text-lg text-gray-700 font-kanit">
-                    "Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.   "
+        <section class="w-full bg-white rounded-3xl shadow-lg py-10 mt-5 text-center">
+            <!-- Quote -->
+            <div class="max-w-2xl mx-auto">
+                <blockquote class="italic text-xl text-gray-700 font-kanit leading-relaxed">
+                "Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus."
                 </blockquote>
-                <span class="block mt-2 text-amber-700 font-kanit font-bold">— Robert Hacker</span>
+                <span class="block mt-4 text-amber-700 font-kanit font-bold text-lg">
+                — Robert Hacker
+                </span>
             </div>
-
-            <div class="flex justify-center gap-6 mt-8">
-                <a href="https://roberthhacker.medium.com/" alt="Robert Hacker on Medium" target="_blank" class="text-amber-600 hover:text-amber-800 text-3xl">
-                    <i class="fab fa-medium"></i>
+            <!-- Social Links -->
+            <div class="flex justify-center gap-8 mt-10 text-4xl">
+                <a href="https://roberthhacker.medium.com/" target="_blank" class="text-amber-600 hover:text-amber-800">
+                <i class="fab fa-medium"></i>
                 </a>
-                <a href="https://linkedin.com/in/roberthacker" alt="Robert Hacker on LinkedIn" target="_blank" class="text-amber-600 hover:text-amber-800 text-3xl">
-                    <i class="fab fa-linkedin"></i>
+                <a href="https://linkedin.com/in/roberthacker" target="_blank" class="text-amber-600 hover:text-amber-800">
+                <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="https://youtu.be/6Juh_bz9kxY?si=41QSHokLwMjY_mB9" alt="Robert Hacker on YouTube" target="_blank" class="text-amber-600 hover:text-amber-800 text-3xl">
-                    <i class="fab fa-youtube"></i>
+                <a href="https://youtu.be/6Juh_bz9kxY?si=41QSHokLwMjY_mB9" target="_blank" class="text-amber-600 hover:text-amber-800">
+                <i class="fab fa-youtube"></i>
                 </a>
             </div>
-            
         </section>
+
     </main>
 
 

@@ -1,16 +1,87 @@
 <!DOCTYPE html>
 <head>
+    <title>Contact - Robert Hacker</title>
+    <meta name="description" content="The personal website of Robert Hacker. Author of The Second Renaissance: How AI Will Transform Science, Technology and Entrepreneurship">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="bg-amber-50">
-    <header id="headerC" class="sticky top-0 w-full pl-10 pr-10 pb-5 pt-5 bg-white/30 backdrop-blur-lg shadow-lg "></header>
+<body class="bg-blue-50/50 overflow-x-hidden sm:overflow-x-visible">
+    <header id="headerC" class="sticky top-0 w-full pl-10 pr-10 pb-5 pt-5 bg-white/30 backdrop-blur-lg shadow-lg z-300"></header>
 
+    <main class="min-h-screen p-4 flex flex-col gap-16">
+        <div class="w-full max-w-4xl mx-auto bg-white rounded-xl shadow-md p-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Contact & Inquiries</h2>
+            <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col gap-6">
 
+                <!--Access Key -->
+                <input type="hidden" name="access_key" value="41659083-dfc4-47c2-b5d7-60ab339b9d7a"> <!-- need to send the code to the email you want to be connected -->
 
-    <footer id="footer" class="bottom-0 w-full pt-15 bg-white/30 backdrop-blur-lg "></footer>
+                <!--Name-->
+                <label for="name" class="font-semibold text-gray-700">Name</label>
+                <input 
+                    type="text" 
+                    name="name"
+                    id="name" 
+                    required
+                    placeholder="Your Name"
+                    class="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-amber-400 transition"
+                />
+                <!-- Email -->
+                <label for="email" class="font-semibold text-gray-700">Email</label>
+                <input 
+                    type="email" 
+                    name="email" 
+                    id="email"
+                    required
+                    placeholder="you@example.com"
+                    class="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-amber-400 transition" 
+                />
+                <!-- message -->
+                <label for="message" class="font-semibold text-gray-700">Message</label>
+                <textarea 
+                    name="message" 
+                    id="message"
+                    rows="5"
+                    required
+                    placeholder="Write your message..."
+                    class="border border-gray-300 rounded-md px-4 py-2 resize-none focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-amber-400 transition"
+                ></textarea>
+
+                <!-- Honeypot Spam Protection -->
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                <!-- Custom Confirmation / Success Page -->
+                <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+
+                <button type="submit" class="bg-amber-500 hover:bg-amber-600 text-white font-semibold rounded-md py-3 transition hover:cursor-pointer">
+                    Send
+                </button>
+            </form>
+            <div class="mt-12 border-t border-gray-200 pt-8">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Keep up with Robert Hacker</h2>
+                <p class="text-gray-600 mb-6 max-w-xl">
+                    For more insights, articles, and updates, be sure to check out Robert Hacker’s online profiles:
+                </p>
+                <div class="flex flex-wrap gap-6 text-amber-600 text-3xl ">
+                    <a href="https://roberthhacker.medium.com/" target="_blank" aria-label="Robert Hacker on Medium" class="hover:text-amber-800 transition ">
+                    <i class="fab fa-medium"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/roberthacker" target="_blank" aria-label="Robert Hacker on LinkedIn" class="hover:text-amber-800 transition ">
+                    <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://youtu.be/6Juh_bz9kxY?si=41QSHokLwMjY_mB9" target="_blank" aria-label="Robert Hacker TEDx Talk on YouTube" class="hover:text-amber-800 transition ">
+                    <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://startup.fiu.edu/robert_hacker_bio/" target="_blank" aria-label="Startup FIU" class="hover:text-amber-800 transition">
+                    <img src="./images/fiu-panther.png" alt="Startup FIU logo" class="w-7 h-full object-contain " />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
     
     <script src="./js/header.js"></script>
     <script src="./js/footer.js"></script>

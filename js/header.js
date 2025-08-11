@@ -7,7 +7,7 @@ function setHeader(elementId, pageTitle){
         const currentPage = window.location.pathname.split('/').pop();
 
         // Helper to add highlight if active
-        const activeClass = "outline outline-red-300";
+        const activeClass = "outline outline-amber-500";
 
         el.innerHTML = `
             <nav>
@@ -15,7 +15,7 @@ function setHeader(elementId, pageTitle){
                     <li class="sm:col-span-6">
                         <div class="flex items-center justify-center">
                             <a>
-                                <h1 class="text-4xl font-kanit font-medium text-black text-shadow-md hover:text-gray-600 transition-colors duration-300 ease-in-out sm:text-6xl">${pageTitle}</h1>
+                                <h1 class="text-4xl font-kanit font-medium text-black text-shadow-md hover:text-amber-500 transition-colors duration-300 ease-in-out sm:text-6xl">${pageTitle}</h1>
                             </a>
                         </div>
                     </li>
