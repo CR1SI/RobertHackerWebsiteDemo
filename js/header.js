@@ -15,7 +15,7 @@ function setHeader(elementId, pageTitle){
                     <li class="sm:col-span-6">
                         <div class="flex items-center justify-center">
                             <a>
-                                <h1 class="text-4xl font-kanit font-medium text-black text-shadow-md hover:text-amber-500 transition-colors duration-300 ease-in-out sm:text-6xl">${pageTitle}</h1>
+                                <h1 class="text-4xl font-kanit font-medium text-black text-shadow-md hover:text-amber-500 cursor-default transition-colors duration-300 ease-in-out sm:text-6xl">${pageTitle}</h1>
                             </a>
                         </div>
                     </li>
