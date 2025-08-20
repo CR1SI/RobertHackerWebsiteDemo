@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
     <title>About - Robert Hacker</title>
+    <link rel="icon" href="./images/favicon-32x32.png">
     <meta name="description" content="The personal website of Robert Hacker. Author of The Second Renaissance: How AI Will Transform Science, Technology and Entrepreneurship">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,13 +11,11 @@
 
 <body class="bg-blue-50/50 overflow-x-hidden sm:overflow-x-visible">
 
-    <header id="headerA" class="sticky top-0 w-full pl-10 pr-10 pb-5 pt-5 bg-white/30 backdrop-blur-lg shadow-lg z-300">
-        <!-- header content -->
-    </header>
+    <header id="headerA" class="sticky top-0 w-full pl-10 pr-10 pb-5 pt-5 bg-white/30 backdrop-blur-lg shadow-lg z-300"></header>
 
     <main class="min-h-screen p-4 flex flex-col gap-16 max-w-[1280px] mx-auto">
 
-    <!-- Profile Picture with subtle hover effect -->
+    <!-- pfp -->
         <section class="relative flex justify-center py-16 px-4">
             <img
                 src="./images/robert-hacker.webp"
@@ -26,7 +25,7 @@
             />
         </section>
 
-        <!-- Introduction & Bio -->
+        <!-- Intro/bio -->
         <section class="bg-white rounded-3xl shadow-lg p-10 sm:p-15">
             <h1 class="text-4xl font-kanit font-bold mb-8 text-gray-900 text-center">
                 Robert Hacker
@@ -46,33 +45,33 @@
             <h2 class="text-2xl font-kanit font-semibold mb-6 text-amber-600 max-w-[720px] mx-auto text-center">Select Publications</h2>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-[900px] mx-auto">
-                <!-- Publication 1 -->
-                <div class="bg-blue-50 rounded-xl shadow-md p-6 flex flex-col items-center cursor-pointer hover:shadow-lg transition-shadow duration-300">
+                <!-- 1 -->
+                <div class="bg-blue-50 rounded-xl shadow-md p-6 flex flex-col items-center hover:shadow-lg transition-shadow duration-300">
                     <img src="./images/The Second Renaissance.jpg" alt="The Second Renaissance" class="w-[160px] h-[220px] object-contain rounded-md mb-4 shadow" loading="lazy" />
                     <h3 class="font-kanit font-semibold text-gray-900 text-lg mb-2 text-center">The Second Renaissance</h3>
                     <p class="text-gray-700 text-center text-sm leading-relaxed mb-4">
                         An insightful look into the future of AI and entrepreneurship in the rapidly evolving tech landscape.
                     </p>
-                    <a href="https://www.amazon.com/Second-Renaissance-Transform-Technology-Entrepreneurship/dp/3111706877/" target="_blank" class="text-amber-600 hover:text-amber-800 underline text-sm font-kanit font-semibold">
+                    <a href="https://www.amazon.com/Second-Renaissance-Transform-Technology-Entrepreneurship/dp/3111706877/" target="_blank" class="text-amber-600 hover:text-amber-800 underline text-sm font-kanit font-semibold cursor-pointer">
                         Learn More
                     </a>
                 </div>
 
-                <!-- Publication 2 -->
-                <div class="bg-blue-50 rounded-xl shadow-md p-6 flex flex-col items-center cursor-pointer hover:shadow-lg transition-shadow duration-300">
+                <!-- 2 -->
+                <div class="bg-blue-50 rounded-xl shadow-md p-6 flex flex-col items-center hover:shadow-lg transition-shadow duration-300">
                     <img src="./images/Billion Dollar Company.jpg" alt="Billion Dollar Company" class="w-[160px] h-[220px] object-contain rounded-md mb-4 shadow" loading="lazy" />
                     <h3 class="font-kanit font-semibold text-gray-900 text-lg mb-2 text-center">Billion Dollar Company</h3>
                     <p class="text-gray-700 text-center text-sm leading-relaxed mb-4">
                         Strategies and insights for building scalable and successful businesses in today's economy.
                     </p>
-                    <a href="https://www.amazon.com/Billion-Dollar-Company-Entrepreneurs-Companies/dp/3838373316/" target="_blank" class="text-amber-600 hover:text-amber-800 underline text-sm font-kanit font-semibold">
+                    <a href="https://www.amazon.com/Billion-Dollar-Company-Entrepreneurs-Companies/dp/3838373316/" target="_blank" class="text-amber-600 hover:text-amber-800 underline text-sm font-kanit font-semibold cursor-pointer">
                         Learn More
                     </a>
                 </div>
 
-                <!-- Publication 3 -->
-                <div class="bg-blue-50 rounded-xl shadow-md p-6 flex flex-col items-center cursor-pointer hover:shadow-lg transition-shadow duration-300 relative">
-                    <!-- Latest Tag -->
+                <!-- 3 -->
+                <div class="bg-blue-50 rounded-xl shadow-md p-6 flex flex-col items-center hover:shadow-lg transition-shadow duration-300 relative">
+                    <!-- Tag -->
                     <span class="absolute top-4 right-15 bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-lg z-30">
                         Latest
                     </span>
@@ -82,22 +81,13 @@
                     <p class="text-gray-700 text-center text-sm leading-relaxed mb-4">
                         A bold new vision for governance in an age defined by AI and complex systems.
                     </p>
-                    <a href="https://www.amazon.com/Renaissance-Rewired-Governing-Age-Complexity/dp/B0FFYHJ3LR/" target="_blank" class="text-amber-600 hover:text-amber-800 underline text-sm font-kanit font-semibold">
+                    <a href="https://www.amazon.com/Renaissance-Rewired-Governing-Age-Complexity/dp/B0FFYHJ3LR/" target="_blank" class="text-amber-600 hover:text-amber-800 underline text-sm font-kanit font-semibold cursor-pointer">
                         Learn More
                     </a>
                 </div>
             </div>
         </section>
     </main>
-
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const card = document.getElementById('cardFlip');
-        card.addEventListener('click', function() {
-            card.classList.toggle('flipped');
-        });
-    });
-    </script>
     
     <script src="./js/header.js"></script>
     <script src="./js/footer.js"></script>
